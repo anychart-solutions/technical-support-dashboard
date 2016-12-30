@@ -3,7 +3,7 @@
 ## Technical Support Dashboard
 Technical Support Dashboard
 
-[<img src=""]()
+[<img src="" alt="Technical Support Dashboard">]()
 
 ## Links
 * [Technical Support Dashboard Demo at AnyChart.Com]()

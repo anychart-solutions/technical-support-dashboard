@@ -1,0 +1,160 @@
+<!--
+    Technical Support Dashboard
+    Documentation: http://docs.anychart.com/
+    API: https://api.anychart.com/
+    Support: http://www.anychart.com/support/
+    Contacts: http://www.anychart.com/company/
+
+    http://www.anychart.com/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="author" content="anychart.com">
+
+    <title>Technical Support Dashboard</title>
+
+    <!-- Bootstrap: Latest compiled and minified -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--Bootstrap datetimepicker-->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css">
+
+    <!-- AnyChart UI -->
+    <link rel="stylesheet" href="https://cdn.anychart.com/css/latest/anychart-ui.min.css">
+    <link rel="stylesheet" href="https://cdn.anychart.com/fonts/2.7.1/anychart.css">
+
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="no-iframe">
+<div id="loader-wrapper" class="anychart-loader">
+    <div class="rotating-cover">
+        <div class="rotating-plane">
+            <div class="chart-row"><span class="chart-col green"></span><span class="chart-col orange"></span><span
+                    class="chart-col red"></span></div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="row">
+        <div class="col-xs-12">
+            <nav class="navbar navbar-default" id="container-timeline">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#nav-date-time" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse nav-date-time" id="nav-date-time">
+                        <ul class="nav navbar-nav">
+                            <li><a data-range="full">All</a></li>
+                            <li><a data-range="today" data-time="2016-12-31T23:59:00">Today</a></li>
+                            <li><a data-range="yesterday">Yesterday</a></li>
+                            <li><a data-range="week">Week</a></li>
+                            <li><a data-range="month">Month</a></li>
+                            <li><a data-range="quarter">Quarter</a></li>
+                        </ul>
+                    </div>
+                    <div class="datetimepicker-container">
+                        <div class="row">
+                            <div class='col-sm-5 col-xs-12'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker_start'>
+                                        <input type='text' placeholder="Start Date Interval"
+                                               class="form-control"/>
+                                        <span class="input-group-addon">
+                                                    <span class="ac ac-calendar"></span>
+                                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-5 col-xs-12'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker_end'>
+                                        <input type='text' placeholder="End Date Interval"
+                                               class="form-control"/>
+                                        <span class="input-group-addon">
+                                                    <span class="ac ac-calendar"></span>
+                                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-xs-12 text-right">
+                                <button type="button" class="btn btn-info" id="set-date">Set Date</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="chart_container" data-visible="line">
+                <div class="chart line-container" id="chart1"></div>
+                <i class="ac ac-chart-area toggle-chart icon-column" data-visible="line"></i>
+                <i class="ac ac-chart-column2 toggle-chart icon-line" data-visible="column"></i>
+                <div class="chart column-container" id="chart2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="chart_container">
+                <div class="chart" id="chart3"></div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="chart_container">
+                <div class="chart" id="chart4"></div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="chart_container">
+                <div class="chart" id="chart5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="chart_container">
+                <div class="chart" id="chart6"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Bootstrap: Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.anychart.com/js/latest/anychart-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+
+<script src="js/common.js"></script>
+</body>
+</html>

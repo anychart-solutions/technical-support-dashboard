@@ -33,21 +33,25 @@
         var chartCall = chart.line(chartSeriesData1);
         chartCall
             .markers('circle')
+            .zIndex(43)
             .clip(false);
 
         var chartEmail = chart.line(chartSeriesData2);
         chartEmail
             .markers('circle')
+            .zIndex(42)
             .clip(false);
 
         var chartSite = chart.line(chartSeriesData3);
         chartSite
             .markers('circle')
+            .zIndex(41)
             .clip(false);
 
         var chartChat = chart.line(chartSeriesData4);
         chartChat
             .markers('circle')
+            .zIndex(40)
             .clip(false);
 
         chart.xScale('datetime');

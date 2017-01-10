@@ -11,6 +11,7 @@ body {
 }
 
 .chart_container {
+    position: relative;
     margin-bottom: 15px;
     background: #fff;
     -webkit-box-shadow: 0 0 5px 0 #ddd;
@@ -61,7 +62,7 @@ a[data-range] {
 
 .toggle-chart {
     position: absolute;
-    top: 5px;
+    top: 6px;
     left: 145px;
     font-size: 24px;
     cursor: pointer;

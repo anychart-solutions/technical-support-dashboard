@@ -343,7 +343,7 @@
             }
             case 'full': {
                 from = minDate;
-                to = maxDate;
+                to = today.getTime() / 1000;
                 chartColumn.xScroller().enabled(true);
                 chartColumn.xZoom().setTo(0, 0.15);
             }

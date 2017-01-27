@@ -4,7 +4,7 @@
 The Technical Support Dashboard is designed to help you organize the work of the tech department. Basic indicators such as number of overdue tickets, the type of problems,  the statistic of tech support engineers and etc. are presented as simple charts. You won't need to find the information in separate programs, everything is shown  in one place.  
 Technical Support Dashboard provides you managing your team effectively.
 
-[<img src="http://i86.fastpic.ru/big/2016/1230/93/478228a194ecea4553890383f47a7493.png" alt="Technical Support Dashboard">]()
+[<img src="http://static.anychart.com/images/github/technical-support-dashboard.png" alt="Technical Support Dashboard">](http://anychart.com/solutions/technical-support-dashboard/)
 
 ## Links
 * [Technical Support Dashboard Demo at AnyChart.Com]()

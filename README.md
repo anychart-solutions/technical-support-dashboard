@@ -1,8 +1,7 @@
 [<img src="https://cdn.anychart.com/images/logo-transparent-segoe.png?2" width="234px" alt="AnyChart - Robust JavaScript/HTML5 Chart library for any project">](http://www.anychart.com)
 
 ## Technical Support Dashboard
-The Technical Support Dashboard is designed to help you organize the work of the tech department. Basic indicators such as number of overdue tickets, the type of problems,  the statistic of tech support engineers and etc. are presented as simple charts. You won't need to find the information in separate programs, everything is shown  in one place.  
-Technical Support Dashboard provides you managing your team effectively.
+This dashboard is designed to help to organize the work of a support department. Essential indicators, such as the number of overdue tickets, types of problems,  support engineers stats presented as simple to read charts. You won't need to find the information in separate places; everything is right in front of your eyes.  
 
 [<img src="http://static.anychart.com/images/github/technical-support-dashboard.png" alt="Technical Support Dashboard">](http://anychart.com/solutions/technical-support-dashboard/)
 

@@ -2,12 +2,12 @@ body {
     background-color: #fff;
 }
 
-.no-iframe .wrapper {
+.wrapper {
     padding: 15px;
 }
 
-.wrapper {
-    padding: 15px 8px;
+.iframe .wrapper {
+    padding: 0 7px;
 }
 
 .chart_container {

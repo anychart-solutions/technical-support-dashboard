@@ -1,0 +1,22 @@
+{
+  "name": "technical-support-dashboard",
+  "version": "1.0.0",
+  "description": "AnyChart Technical Support Dashboard",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anychart-solutions/technical-support-dashboard.git"
+  },
+  "keywords": [],
+  "author": "AnyChart",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/anychart-solutions/technical-support-dashboard/issues"
+  },
+  "homepage": "https://github.com/anychart-solutions/technical-support-dashboard#readme",
+  "dependencies": {
+    "anychart": "^8.0.0"
+  }
+}

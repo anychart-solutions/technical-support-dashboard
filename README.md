@@ -13,5 +13,9 @@ This dashboard is designed to help to organize the work of a support department.
 * [Technical Support](https://www.anychart.com/support)
 
 ## License
-[© AnyChart.com - JavaScript charts](http://www.anychart.com). 
+AnyChart solution sample includes two parts:
+- code of the solution sample that allows to use Javascript library (in this case, AnyChart). You can use, edit, modify it, use it with other Javascript libraries without any restrictions. It is released under [Apache 2.0 License](https://github.com/anychart-solutions/technical-support-dashboard/blob/master/LICENSE)
+- AnyChart JavaScript library. It is released under Commercial license. You can test this plugin with the trial version of AnyChart. Our trial version is not limited by time and doesn't contain any feature limitations. Check details [here](https://www.anychart.com/buy/)
+
+If you have any questions regarding licensing - please contact us. <sales@anychart.com>
 [![Analytics](https://ga-beacon.appspot.com/UA-228820-4/Solutions/Technical-Support-Dashboard?pixel&useReferer)](https://github.com/igrigorik/ga-beacon)

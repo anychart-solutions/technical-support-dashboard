@@ -6,7 +6,7 @@ This dashboard is designed to help to organize the work of a support department.
 [<img src="http://static.anychart.com/images/github/technical-support-dashboard.png" alt="Technical Support Dashboard">](https://www.anychart.com/solutions/technical-support-dashboard/)
 
 ## Links
-* [Technical Support Dashboard Demo at AnyChart.Com]()
+* [Technical Support Dashboard Demo at AnyChart.Com](https://www.anychart.com/solutions/technical-support-dashboard/)
 * [Documentation](https://docs.anychart.com)
 * [JavaScript API Reference](https://api.anychart.com)
 * [Code Playground](https://playground.anychart.com)

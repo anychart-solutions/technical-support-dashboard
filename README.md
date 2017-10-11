@@ -1,17 +1,21 @@
-[<img src="https://cdn.anychart.com/images/logo-transparent-segoe.png?2" width="234px" alt="AnyChart - Robust JavaScript/HTML5 Chart library for any project">](http://www.anychart.com)
+[<img src="https://cdn.anychart.com/images/logo-transparent-segoe.png?2" width="234px" alt="AnyChart - Robust JavaScript/HTML5 Chart library for any project">](https://www.anychart.com)
 
 ## Technical Support Dashboard
-The Technical Support Dashboard is designed to help you organize the work of the tech department. Basic indicators such as number of overdue tickets, the type of problems,  the statistic of tech support engineers and etc. are presented as simple charts. You won't need to find the information in separate programs, everything is shown  in one place.  
-Technical Support Dashboard provides you managing your team effectively.
+This dashboard is designed to help to organize the work of a support department. Essential indicators, such as the number of overdue tickets, types of problems,  support engineers stats presented as simple to read charts. You won't need to find the information in separate places; everything is right in front of your eyes.
 
-[<img src="https://static.anychart.com/images/github/technical-support-dashboard.png" alt="Technical Support Dashboard">](http://anychart.com/solutions/technical-support-dashboard/)
+[<img src="http://static.anychart.com/images/github/technical-support-dashboard.png" alt="Technical Support Dashboard">](https://www.anychart.com/solutions/technical-support-dashboard/)
 
 ## Links
-* [Technical Support Dashboard Demo at AnyChart.Com]()
+* [Technical Support Dashboard Demo at AnyChart.Com](https://www.anychart.com/solutions/technical-support-dashboard/)
 * [Documentation](https://docs.anychart.com)
 * [JavaScript API Reference](https://api.anychart.com)
 * [Code Playground](https://playground.anychart.com)
-* [Technical Support](https://anychart.com/support)
+* [Technical Support](https://www.anychart.com/support)
 
 ## License
-[© AnyChart.com - JavaScript charts](http://www.anychart.com). Released under the [Apache 2.0 License](https://github.com/anychart-solutions/technical-support-dashboard/blob/master/LICENSE).
+AnyChart solution sample includes two parts:
+- code of the solution sample that allows to use Javascript library (in this case, AnyChart). You can use, edit, modify it, use it with other Javascript libraries without any restrictions. It is released under [Apache 2.0 License](https://github.com/anychart-solutions/technical-support-dashboard/blob/master/LICENSE)
+- AnyChart JavaScript library. It is released under Commercial license. You can test this plugin with the trial version of AnyChart. Our trial version is not limited by time and doesn't contain any feature limitations. Check details [here](https://www.anychart.com/buy/)
+
+If you have any questions regarding licensing - please contact us. <sales@anychart.com>
+[![Analytics](https://ga-beacon.appspot.com/UA-228820-4/Solutions/Technical-Support-Dashboard?pixel&useReferer)](https://github.com/igrigorik/ga-beacon)

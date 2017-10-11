@@ -24,10 +24,10 @@
 
     //Draw Tickets Timeline Line Chart
     function createChart1(chartData1) {
-        var chartSeriesData1 = chartData1.mapAs(undefined, {x: 'date', value: 'call center'});
-        var chartSeriesData2 = chartData1.mapAs(undefined, {x: 'date', value: 'email'});
-        var chartSeriesData3 = chartData1.mapAs(undefined, {x: 'date', value: 'site'});
-        var chartSeriesData4 = chartData1.mapAs(undefined, {x: 'date', value: 'live chat'});
+        var chartSeriesData1 = chartData1.mapAs({x: 'date', value: 'call center'});
+        var chartSeriesData2 = chartData1.mapAs({x: 'date', value: 'email'});
+        var chartSeriesData3 = chartData1.mapAs({x: 'date', value: 'site'});
+        var chartSeriesData4 = chartData1.mapAs({x: 'date', value: 'live chat'});
 
         var chart = anychart.line();
         var chartCall = chart.line(chartSeriesData1);
@@ -54,7 +54,7 @@
             .zIndex(40)
             .clip(false);
 
-        chart.xScale('datetime');
+        chart.xScale('date-time');
 
         var chartXScale = chart.xScale();
         chartXScale
@@ -77,7 +77,6 @@
         chartTitle
             .enabled(true)
             .text('Tickets Timeline')
-            .textWrap('noWrap')
             .textOverflow('...')
             .align('left');
 
@@ -89,13 +88,13 @@
         var chartTooltip = chart.tooltip();
         chartTooltip
             .displayMode('union')
-            .titleFormatter(function () {
+            .titleFormat(function () {
                 return anychart.format.dateTime(this.points[0].x, 'MM/dd/yyyy');
             });
 
         var chartXAxisLabels = chart.xAxis().labels();
         chartXAxisLabels
-            .textFormatter(function () {
+            .format(function () {
                 return anychart.format.dateTime(this.tickValue, 'MM/dd/yyyy');
             });
 
@@ -104,10 +103,10 @@
 
     //Draw Tickets Timeline Column Chart
     function createChart2(chartData1) {
-        var chartSeriesData1 = chartData1.mapAs(undefined, {x: 'date', value: 'call center'});
-        var chartSeriesData2 = chartData1.mapAs(undefined, {x: 'date', value: 'email'});
-        var chartSeriesData3 = chartData1.mapAs(undefined, {x: 'date', value: 'site'});
-        var chartSeriesData4 = chartData1.mapAs(undefined, {x: 'date', value: 'live chat'});
+        var chartSeriesData1 = chartData1.mapAs({x: 'date', value: 'call center'});
+        var chartSeriesData2 = chartData1.mapAs({x: 'date', value: 'email'});
+        var chartSeriesData3 = chartData1.mapAs({x: 'date', value: 'site'});
+        var chartSeriesData4 = chartData1.mapAs({x: 'date', value: 'live chat'});
 
         var chart = chartColumn;
         chart.column(chartSeriesData1);
@@ -133,7 +132,6 @@
         chartTitle
             .enabled(true)
             .text('Tickets Timeline')
-            .textWrap('noWrap')
             .textOverflow('...')
             .align('left');
 
@@ -145,13 +143,13 @@
         var chartTooltip = chart.tooltip();
         chartTooltip
             .displayMode('union')
-            .titleFormatter(function () {
+            .titleFormat(function () {
                 return anychart.format.dateTime(this.points[0].x, 'MM/dd/yyyy');
             });
 
         var chartXAxisLabels = chart.xAxis().labels();
         chartXAxisLabels
-            .textFormatter(function () {
+            .format(function () {
                 return anychart.format.dateTime(this.tickValue, 'MM/dd/yyyy');
             });
 
@@ -164,7 +162,7 @@
 
     //Draw Number of Overdue Tickets
     function createChart3(chartData2) {
-        var chartSeriesData = chartData2.mapAs(undefined, {x: 'key', value: 'count'});
+        var chartSeriesData = chartData2.mapAs({x: 'key', value: 'count'});
         var chart = anychart.pie(chartSeriesData);
 
         var chartTitle = chart.title();
@@ -174,7 +172,7 @@
             .align('left');
 
         var chartPalette = anychart.palettes.rangeColors();
-        chartPalette.colors([
+        chartPalette.items([
             {color: '#64b5f6'},
             {color: '#455a64'}
         ]);
@@ -195,14 +193,13 @@
 
     //Draw Types of Problems
     function createChart4(chartData3) {
-        var chartSeriesData = chartData3.mapAs(undefined, {x: 'label', value: 'count'});
+        var chartSeriesData = chartData3.mapAs({x: 'label', value: 'count'});
         var chart = anychart.bar(chartSeriesData);
 
         var chartTitle = chart.title();
         chartTitle
             .enabled(true)
             .text('Types of Problems')
-            .textWrap('noWrap')
             .textOverflow('...')
             .align('left');
 
@@ -214,7 +211,7 @@
 
     //Draw Tickets by Customer Types
     function createChart5(chartData4) {
-        var chartSeriesData = chartData4.mapAs(undefined, {x: 'priority', value: 'count'});
+        var chartSeriesData = chartData4.mapAs({x: 'priority', value: 'count'});
         var chart = anychart.pie(chartSeriesData);
 
         var chartTitle = chart.title();
@@ -224,7 +221,7 @@
             .align('left');
 
         var chartPalette = anychart.palettes.rangeColors();
-        chartPalette.colors([
+        chartPalette.items([
             {color: '#64b5f6'},
             {color: '#455a64'}
         ]);
@@ -245,9 +242,9 @@
 
     //Draw Tech Support Engineers
     function createChart6(chartData5) {
-        var chartSeriesData1 = chartData5.mapAs(undefined, {x: 'assigner', value: 'all'});
-        var chartSeriesData2 = chartData5.mapAs(undefined, {x: 'assigner', value: 'open'});
-        var chartSeriesData3 = chartData5.mapAs(undefined, {x: 'assigner', value: 'escalated'});
+        var chartSeriesData1 = chartData5.mapAs({x: 'assigner', value: 'all'});
+        var chartSeriesData2 = chartData5.mapAs({x: 'assigner', value: 'open'});
+        var chartSeriesData3 = chartData5.mapAs({x: 'assigner', value: 'escalated'});
 
         var chart = anychart.bar();
         var allTickets = chart.bar(chartSeriesData1);
@@ -271,7 +268,6 @@
         chartTitle
             .enabled(true)
             .text('Tech Support Engineers')
-            .textWrap('noWrap')
             .textOverflow('...')
             .align('left');
 

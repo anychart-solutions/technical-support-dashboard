@@ -5,6 +5,27 @@ This dashboard is designed to help to organize the work of a support department.
 
 [<img src="http://static.anychart.com/images/github/technical-support-dashboard.png" alt="Technical Support Dashboard">](https://www.anychart.com/solutions/technical-support-dashboard/)
 
+## Running
+Clone this repository:
+
+```
+$ git clone git@github.com:anychart-solutions/technical-support-dashboard.git
+```
+
+Navigate to the solution directory:
+
+```
+$ cd technical-support-dashboard
+```
+
+Intall dependencies.
+
+```
+$ npm install
+```
+
+Open index.html in the browser.
+
 ## Links
 * [Technical Support Dashboard Demo at AnyChart.Com](https://www.anychart.com/solutions/technical-support-dashboard/)
 * [Documentation](https://docs.anychart.com)

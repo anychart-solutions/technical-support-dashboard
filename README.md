@@ -18,7 +18,7 @@ Navigate to the solution directory:
 $ cd technical-support-dashboard
 ```
 
-Intall dependencies.
+Intall dependencies:
 
 ```
 $ npm install
